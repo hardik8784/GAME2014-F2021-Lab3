@@ -327,50 +327,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &884891252 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4468100721838439512, guid: d238da0150532fd4cafe8bff18251dcb, type: 3}
-  m_PrefabInstance: {fileID: 4468100721092780588}
-  m_PrefabAsset: {fileID: 0}
---- !u!60 &884891253
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884891252}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.92, y: 0.56}
-    newSize: {x: 0.92, y: 0.56}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.029217169, y: 0.25230005}
-      - {x: -0.20305094, y: 0.095383495}
-      - {x: -0.30438298, y: 0.029800892}
-      - {x: -0.45999998, y: -0.09539942}
-      - {x: -0.38151747, y: -0.09998432}
-      - {x: -0.25384986, y: -0.044552118}
-      - {x: -0.07509039, y: -0.20965195}
-      - {x: -0.06776397, y: -0.28461722}
-      - {x: 0.07424612, y: -0.28162193}
-      - {x: 0.088939995, y: -0.20087576}
-      - {x: 0.2604953, y: -0.07689905}
-      - {x: 0.44, y: -0.099999994}
-      - {x: 0.4261501, y: -0.06924915}
-      - {x: 0.029217184, y: 0.2476838}
 --- !u!1001 &4468100721092780588
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -426,8 +382,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: -1454968294786448293, guid: d238da0150532fd4cafe8bff18251dcb, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d238da0150532fd4cafe8bff18251dcb, type: 3}
 --- !u!1001 &6788030807070526311
 PrefabInstance:
