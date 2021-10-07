@@ -9,13 +9,13 @@ public class GameController : MonoBehaviour
     public Rect screen;
     public Rect safeArea;
 
-    public Button BackButton;
+    //public Button BackButton;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(BackButton.transform.localPosition);
+       // Debug.Log(BackButton.transform.localPosition);
     }
 
     // Update is called once per frame
