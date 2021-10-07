@@ -14,7 +14,7 @@ public class BulletManager : MonoBehaviour
     {
         bulletPool = new Queue<GameObject>();     //Empty Queue Created   
 
-        BuildBulletPool();
+        //BuildBulletPool();
     }
 
     /// <summary>
@@ -24,13 +24,17 @@ public class BulletManager : MonoBehaviour
     {
         for(int i=0; i < bulletNumber;i++ )
         {
-            var temp_bullet = Instantiate(bulletPrefab);
-            temp_bullet.SetActive(false);
-            temp_bullet.transform.SetParent(transform);
-            bulletPool.Enqueue(temp_bullet);
+            Addbullet();
         }
     }
 
+    private void Addbullet()
+    {
+        var temp_bullet = Instantiate(bulletPrefab);
+        temp_bullet.SetActive(false);
+        temp_bullet.transform.SetParent(transform);
+        bulletPool.Enqueue(temp_bullet);
+    }
 
     /// <summary>
     /// This is used to remove the bullet from bulletpool
@@ -38,6 +42,11 @@ public class BulletManager : MonoBehaviour
     /// </summary>
     public GameObject GetBullet(Vector2 spawn_position)
     {
+        if(bulletPool.Count <1)
+        {
+            Addbullet();
+            bulletNumber++;
+        }
         var temp_bullet = bulletPool.Dequeue();
         temp_bullet.transform.position = spawn_position;
         temp_bullet.SetActive(true);
